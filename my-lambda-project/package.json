@@ -1,0 +1,21 @@
+{
+  "name": "my-lambda-project",
+  "version": "1.0.0",
+  "description": "A simple TypeScript AWS Lambda function",
+  "main": "dist/handler.js",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "serverless deploy",
+    "start": "serverless offline"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.92",
+    "serverless": "^3.0.0",
+    "serverless-offline": "^8.0.0",
+    "typescript": "^4.0.0"
+  }
+}
+

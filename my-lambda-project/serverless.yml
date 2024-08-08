@@ -1,0 +1,25 @@
+service: my-lambda-project
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+functions:
+  helloWorld:
+    handler: dist/handler.helloWorld
+    events:
+      - http:
+          path: hello
+          method: get
+
+plugins:
+  - serverless-offline
+
+package:
+  individually: true
+
+custom:
+  stage: ${opt:stage, 'dev'}
+
+
