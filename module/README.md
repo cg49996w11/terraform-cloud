@@ -34,10 +34,10 @@ This file is used to install necessary dependencies in aws codebuild execution e
 
 ```
 
+Buildspec.yaml
 
 
-
-Buildspec.yaml is the file used by AWS codebuild.It will run all 4 phases defined in it
+It is the file used by AWS codebuild.It will run all 4 phases defined in it
 
 1)Install phase
 * npm install :Install phase is used to install all dependencies that are defined in package.json file
@@ -78,9 +78,8 @@ artifacts:
 
 ```
 
+serverless.yml
 
-
-Below is the serverless.yml file structure:
 * Update service property, the value defined here will be the name of lambda function
 * Update functions property with the name of handler that you defined in typescript as the same handler will be transpile to javascript in dist folder while running npm run build
 * serverless-offline is a plugin used for local testing and custom is used to pass any custom configurations for local debugging
