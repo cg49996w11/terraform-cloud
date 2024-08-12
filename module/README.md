@@ -139,9 +139,9 @@ To deploy this project run
 
 
 ```
-*The bitbucket_repo_url will point to repository where you intend to configure the webhook , the source_version will the branch for the same and bitbucket_connection_arn will be arn for same
+* The bitbucket_repo_url will point to repository where you intend to configure the webhook , the source_version will the branch for the same and bitbucket_connection_arn will be arn for same
 
-*The stage will point to the environment where you intend to deploy the lambda
+* The stage will point to the environment where you intend to deploy the lambda
 The source_version
 
 2) Make sure you are in modules directory and then run 
