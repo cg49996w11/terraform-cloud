@@ -1,7 +1,7 @@
 
 # Deploy lambda using serverless framework
 
-This project is used for deploying  lambda functions using serverless framework. Terraform is used to create AWS codebuild instance with a webhook pointing to the bitbucket repository that is triggered every time pull request is merged.AWS codebuild is used to transpile the typescript to javascript and then deploy it to create aws-lambda using serverless framework
+This project is used for deploying  lambda functions using serverless framework. Terraform is used to create AWS codebuild instance with a webhook pointing to the bitbucket repository that is triggered every time pull request is merged. AWS codebuild is then used to transpile the typescript to javascript and then deploy it to create aws-lambda using serverless framework
 
 ## Deployment
 
